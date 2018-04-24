@@ -10,7 +10,7 @@ class V1::WodsController < ApplicationController
     if @wod.save
       render json: @wod, status: :ok
     else
-      status: 500
+      render status: 500
     end
   end
 
